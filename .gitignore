@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pt
+*.pth
+*.ckpt
+*.log
+*.tmp
+*.tar.gz
+*.zip
+.DS_Store

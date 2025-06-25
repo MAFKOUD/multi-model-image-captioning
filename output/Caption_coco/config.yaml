@@ -1,0 +1,23 @@
+image_root: C:/archive/coco2014/images
+ann_root: annotation
+pretrained: checkpoints/model_base_capfilt_large.pth
+
+# ViT-Large config (correspond au modèle téléchargé)
+vit: large
+vit_grad_ckpt: true
+vit_ckpt_layer: 5
+batch_size: 16
+init_lr: 2e-6
+
+image_size: 384
+
+# Generation configs
+max_length: 20
+min_length: 5
+num_beams: 3
+prompt: 'a picture of '
+
+# Optimizer
+weight_decay: 0.05
+min_lr: 0
+max_epoch: 5
