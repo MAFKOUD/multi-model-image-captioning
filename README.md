@@ -1,35 +1,34 @@
-Parfait ✅
-On va faire **un README académique, clair, crédible et bien noté**.
-Tu pourras **copier-coller tel quel** dans `README.md`.
 
-Je te donne **une version EN ANGLAIS** (fortement recommandée pour un projet IA).
-Si tu veux ensuite une version FR, je pourrai te la traduire.
-
----
-
-# 📘 README.md — **Multi-Model Consensus for Image Captioning**
-
-```md
 # 🧠 Multi-Model Consensus for Image Captioning
 
-## Project Overview
-This project presents an **intelligent image captioning system** that improves reliability by
-combining multiple vision–language models and applying an **explicit reasoning pipeline**.
+## Project Description
 
-Instead of relying on a single model, the system:
-- Generates captions using **multiple pretrained models**
-- Measures **semantic agreement** between them
-- Selects a **consensus caption**
-- Applies **Tree of Thoughts (ToT)** reasoning
-- Uses **Gemini as a reasoning and refinement agent**, not as an oracle
-- Produces a final, coherent, and explainable caption via a **Streamlit interface**
+This project implements an **intelligent and explainable image captioning system**
+based on **multi-model consensus and advanced reasoning techniques**.
 
-This approach is particularly suited for **high-reliability AI systems** where transparency,
-consistency, and reasoning traceability are required.
+Instead of relying on a single vision–language model, the system generates captions
+from multiple pretrained models and applies a structured reasoning pipeline to
+select, refine, and justify the final caption.
+
+The application is deployed using **Streamlit** and emphasizes:
+- Reliability
+- Transparency
+- Traceable reasoning
+- Human-like final descriptions
 
 ---
 
-## 🧩 Architecture Overview
+## 🎯 Objectives
+
+- Improve robustness of image captioning through **model agreement**
+- Avoid hallucinations by relying only on **shared semantic content**
+- Apply **explicit reasoning techniques** (not a simple chat interface)
+- Provide **clear explanations** of decisions made by the system
+- Demonstrate **Agent-based reasoning** using modern LLMs
+
+---
+
+## 🧩 System Architecture
 
 ```
 
@@ -60,68 +59,73 @@ Final Caption + Explanation
 - **ViT-GPT2** (nlpconnect)
 - **GIT** (Microsoft)
 
-These models are lightweight and efficient, but may produce inconsistent outputs individually.
+Each model independently generates a caption from the same image.
+
+---
 
 ### Reasoning Model
-- **Gemini (Google Generative AI)**  
-Used strictly as a **reasoning and refinement agent**:
-- It does **not** analyze the image directly
-- It only reasons over captions already generated
-- It is constrained to avoid hallucinations
+- **Gemini (Google Generative AI)**
+
+Gemini is **not used as an oracle** and does **not analyze the image directly**.
+Instead, it acts as a **reasoning agent** that:
+- Aggregates information from multiple captions
+- Refines wording without adding new content
+- Generates Tree of Thoughts candidates
+- Performs self-correction
 
 ---
 
 ## 🧠 Reasoning Techniques Implemented
 
 ### 1️⃣ Semantic Consensus
-Captions are embedded using **Sentence-BERT**.
-The system computes **pairwise cosine similarity** and selects the caption with the
-highest average agreement.
+- Captions are embedded using **Sentence-BERT**
+- Pairwise **cosine similarity** is computed
+- The caption with the highest average agreement is selected
 
-This ensures the selected caption represents the **most consistent interpretation**.
+This ensures that the chosen caption reflects the **most consistent interpretation**
+among all models.
 
 ---
 
 ### 2️⃣ Tree of Thoughts (ToT)
-When enabled, Gemini generates multiple candidate refinements.
-Each candidate is evaluated based on:
-- Semantic similarity to the consensus caption
-- Conciseness and clarity
+When enabled:
+- Gemini generates multiple candidate captions
+- Each candidate is evaluated against the consensus caption
+- The most semantically aligned and concise candidate is selected
 
-The best candidate is selected programmatically, making the reasoning **explicit and traceable**.
+This reasoning process is **explicit, inspectable, and traceable**.
 
 ---
 
 ### 3️⃣ Self-Correction
-A final verification step checks for:
-- Redundancy
-- Inconsistencies
-- Over-specification
-
-This improves robustness without introducing new information.
+A final verification step ensures that the selected caption:
+- Is coherent
+- Is concise
+- Does not introduce contradictions or hallucinations
 
 ---
 
 ## 📊 Evaluation Metrics
 
-When ground truth captions are available (`data.json`), the system computes:
+When ground truth captions are available, the system computes:
+
 - **SPICE**
 - **BLEU-1 to BLEU-4**
 - **METEOR**
 - **ROUGE-L**
 
-These metrics are shown transparently in the Streamlit interface.
+All metrics are displayed transparently in the Streamlit interface.
 
 ---
 
-## 🖥️ Streamlit Interface
+## 🖥️ Streamlit Application Features
 
-The application provides:
 - Image upload
-- Toggle options for Tree of Thoughts and self-correction
+- Toggle Tree of Thoughts reasoning
+- Toggle self-correction
 - Display of all model captions
-- Consensus decision
-- Final caption
+- Consensus decision visualization
+- Final refined caption
 - Evaluation scores
 - **Dynamic, data-driven agent explanation**
 
@@ -132,13 +136,13 @@ The application provides:
 ```
 
 .
-├── app.py                 # Streamlit UI
+├── app.py                 # Streamlit interface
 ├── pipeline.py            # Main reasoning pipeline
 ├── caption_models.py      # Caption generation models
 ├── consensus.py           # Semantic similarity & consensus
-├── tot_selector.py        # Tree of Thoughts selection logic
-├── gemini_fusion.py       # Gemini reasoning & refinement
-├── agent_explanation.py   # Dynamic reasoning explanation
+├── tot_selector.py        # Tree of Thoughts selection
+├── gemini_fusion.py       # Gemini reasoning logic
+├── agent_explanation.py   # Dynamic explanation generator
 ├── evaluation.py          # Metrics computation
 ├── data.json              # Ground truth captions (optional)
 ├── requirements.txt
@@ -164,40 +168,41 @@ streamlit run app.py
 
 ---
 
-## 🔍 Key Contributions
+## ⭐ Key Contributions
 
 * Multi-model caption consensus
-* Explicit semantic reasoning
-* Tree of Thoughts integration
-* Gemini used as a reasoning agent (not an oracle)
-* Explainable AI with traceable decisions
+* Semantic similarity-based decision making
+* Tree of Thoughts reasoning
+* Gemini used as a **reasoning agent**, not an oracle
+* Self-correction mechanism
+* Explainable AI with transparent decisions
 * Interactive Streamlit interface
 
 ---
 
 ## 👥 Team Members
 
-* Bellouch Ayoub
-* Mafkoud Khaoula
-* Hamid Hiba
-* Berkani Mohammed Adam
+* **Bellouch Ayoub**
+* **Mafkoud Khaoula**
+* **Hamid Hiba**
+* **Berkani Mohammed Adam**
 
 ---
 
 ## 📌 Notes
 
-* The Gemini API key is embedded internally for demonstration purposes.
-* No user input is required for API configuration.
-* The system is designed for educational and research use.
+* The Gemini API key is integrated internally for demonstration purposes
+* No user configuration is required
+* This project is intended for **academic and educational use**
 
 ---
 
 ## 📜 License
 
-This project is released for academic and educational purposes.
+This project is provided for academic purposes only.
 
 ````
 
 ---
 
-érifie le README”** ou **“On prépare la soutenance”** 💪
+👉 dis-le-moi, on termine ça comme des pros 🚀
