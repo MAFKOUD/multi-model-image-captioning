@@ -187,12 +187,3 @@ streamlit run app.py
 * **Berkani Mohammed Adam**
 
 ---
-
-## 📌 Notes
-
-* The Gemini API key is integrated internally for demonstration purposes
-* No user configuration is required
-* This project is intended for **academic and educational use**
-
----
-
