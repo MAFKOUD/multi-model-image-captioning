@@ -1,4 +1,3 @@
-
 # 🧠 Multi-Model Consensus for Image Captioning
 
 ## Project Description
@@ -40,7 +39,7 @@ Semantic Similarity Analysis
 ↓
 Consensus Caption Selection
 ↓
-Tree of Thoughts (optional)
+Tree of Thoughts 
 ↓
 Gemini Reasoning & Refinement
 ↓
@@ -197,12 +196,3 @@ streamlit run app.py
 
 ---
 
-## 📜 License
-
-This project is provided for academic purposes only.
-
-````
-
----
-
-👉 dis-le-moi, on termine ça comme des pros 🚀
