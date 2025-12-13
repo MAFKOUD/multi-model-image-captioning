@@ -1,4 +1,21 @@
-timm==0.4.12
-transformers==4.15.0
-fairscale==0.4.4
-pycocoevalcap
+# UI
+streamlit>=1.30
+
+# Deep Learning
+torch
+transformers
+
+# Semantic similarity
+sentence-transformers
+scikit-learn
+numpy
+
+# Image processing
+pillow
+
+# Evaluation metrics
+nltk
+rouge-score
+
+# LLM reasoning (Gemini)
+google-generativeai

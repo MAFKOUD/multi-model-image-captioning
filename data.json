@@ -1,0 +1,161 @@
+{
+  "img1.jpg": [
+    { "caption": "A sunset over the ocean under a pier." },
+    { "caption": "Waves move under a pier at sunset." },
+    { "caption": "The sun sets behind a pier over the sea." },
+    { "caption": "Ocean waves under a pier during sunset." },
+    { "caption": "A pier over the sea with a sunset sky." }
+  ],
+
+  "img2.jpg": [
+    { "caption": "A green leaf lit by sunlight." },
+    { "caption": "Sunlight shines through a green leaf." },
+    { "caption": "A close-up of a green leaf in the light." },
+    { "caption": "A single leaf glowing in sunlight." },
+    { "caption": "A bright green leaf with sunlight on it." }
+  ],
+
+  "img3.jpg": [
+    { "caption": "Two deer rest in a forest." },
+    { "caption": "Deer sit on the ground in the woods." },
+    { "caption": "Two deer are resting in a forest area." },
+    { "caption": "Deer relax on the forest floor." },
+    { "caption": "A pair of deer lying in the woods." }
+  ],
+
+  "img4.jpg": [
+    { "caption": "A desk with a computer and keyboard." },
+    { "caption": "A clean desk setup with a monitor." },
+    { "caption": "A workspace with a computer on a desk." },
+    { "caption": "A desk with a keyboard and mouse." },
+    { "caption": "A computer setup on a wooden desk." }
+  ],
+
+  "img5.jpg": [
+    { "caption": "A man rests on the steering wheel of a truck." },
+    { "caption": "A man sleeping inside an old truck." },
+    { "caption": "A tired man leans on a truck steering wheel." },
+    { "caption": "A man with a hat resting in a truck." },
+    { "caption": "A man sleeping with his head on the wheel." }
+  ],
+
+  "img6.jpg": [
+    { "caption": "Orange tulips glowing in sunlight." },
+    { "caption": "A group of tulips lit by the sun." },
+    { "caption": "Tulips shining in warm sunlight." },
+    { "caption": "Bright orange tulips in the light." },
+    { "caption": "Sunlit tulips in a garden." }
+  ],
+
+  "img7.jpg": [
+    { "caption": "A man sitting at a desk with a phone." },
+    { "caption": "A person holding a phone at a desk." },
+    { "caption": "A man checks his phone near a laptop." },
+    { "caption": "A desk with a laptop and a man on his phone." },
+    { "caption": "A man using a smartphone at his desk." }
+  ],
+
+  "img8.jpg": [
+    { "caption": "Wooden folding rulers on a table." },
+    { "caption": "Old wooden rulers on a workbench." },
+    { "caption": "Several wooden rulers laid out." },
+    { "caption": "Vintage folding rulers on a table." },
+    { "caption": "A set of wooden rulers on wood." }
+  ],
+
+  "img9.jpg": [
+    { "caption": "People at a crowded beach." },
+    { "caption": "Kids playing soccer on the beach." },
+    { "caption": "A busy beach with people and waves." },
+    { "caption": "Children playing with a ball on the sand." },
+    { "caption": "A sunny beach with many people." }
+  ],
+
+  "img10.jpg": [
+    { "caption": "People shopping in a supermarket." },
+    { "caption": "A family with a cart in a store aisle." },
+    { "caption": "Shoppers walking through a grocery aisle." },
+    { "caption": "People choosing items in a supermarket." },
+    { "caption": "A busy supermarket with full shelves." }
+  ],
+
+  "img11.jpg": [
+    { "caption": "People sitting inside a bar." },
+    { "caption": "Customers at a bar counter." },
+    { "caption": "People talking and drinking in a bar." },
+    { "caption": "A bar with people sitting at tables." },
+    { "caption": "A cozy bar with customers and drinks." }
+  ],
+
+  "img12.jpg": [
+    { "caption": "A family sitting at an outdoor table." },
+    { "caption": "People eating together outside." },
+    { "caption": "A family sharing a meal outdoors." },
+    { "caption": "Several people sitting at a picnic table." },
+    { "caption": "A group having lunch in a garden." }
+  ],
+
+  "img13.jpg": [
+    { "caption": "A road between tall mountains." },
+    { "caption": "A highway running through a valley." },
+    { "caption": "A road in a mountain landscape." },
+    { "caption": "Mountains on both sides of a road." },
+    { "caption": "A long road through the mountains." }
+  ],
+
+  "img14.jpg": [
+    { "caption": "People sitting in a movie theater." },
+    { "caption": "A cinema with people in red seats." },
+    { "caption": "A theater full of people waiting." },
+    { "caption": "Audience sitting in a dark cinema." },
+    { "caption": "A movie theater with a crowd seated." }
+  ],
+
+  "img15.jpg": [
+    { "caption": "Medical staff walking in a hospital hallway." },
+    { "caption": "A nurse pushes a stretcher in a corridor." },
+    { "caption": "Doctors and nurses in a hospital hall." },
+    { "caption": "A patient being wheeled through a hallway." },
+    { "caption": "Hospital workers moving through the corridor." }
+  ],
+
+  "img16.jpg": [
+    { "caption": "A honey dipper dripping honey." },
+    { "caption": "Honey falling from a wooden dipper." },
+    { "caption": "A jar of honey with a dipper." },
+    { "caption": "A dipper covered in honey." },
+    { "caption": "Thick honey dripping into a pot." }
+  ],
+
+  "img17.jpg": [
+    { "caption": "A fluffy white dog looking to the side." },
+    { "caption": "A light-colored dog sitting calmly." },
+    { "caption": "A dog with long fur facing sideways." },
+    { "caption": "A white dog with its tongue out." },
+    { "caption": "A friendly dog looking upward." }
+  ],
+
+  "img18.jpg": [
+    { "caption": "A parking lot seen from above." },
+    { "caption": "Cars parked in neat rows." },
+    { "caption": "An aerial view of a parking area." },
+    { "caption": "Rows of cars in a large parking lot." },
+    { "caption": "A top view of cars and trees." }
+  ],
+
+  "img19.jpg": [
+    { "caption": "Students sitting in a lecture hall." },
+    { "caption": "A crowded classroom with many students." },
+    { "caption": "People attending a lecture." },
+    { "caption": "A large room full of students." },
+    { "caption": "Students listening in a university hall." }
+  ],
+
+  "img20.jpg": [
+    { "caption": "A man looking at the sunset." },
+    { "caption": "A person standing near a railing at sunset." },
+    { "caption": "A man watching the sun in the distance." },
+    { "caption": "A silhouette of a man at sunset." },
+    { "caption": "A man facing the bright sunset sky." }
+  ]
+}
