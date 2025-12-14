@@ -17,7 +17,7 @@ The application is deployed using **Streamlit** and emphasizes:
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Improve robustness of image captioning through **model agreement**
 - Avoid hallucinations by relying only on **shared semantic content**
@@ -27,7 +27,7 @@ The application is deployed using **Streamlit** and emphasizes:
 
 ---
 
-## 🧩 System Architecture
+## System Architecture
 
 ```
 
@@ -51,7 +51,7 @@ Final Caption + Explanation
 
 ---
 
-## 🤖 Models Used
+## Models Used
 
 ### Vision–Language Models
 - **BLIP Base** (Salesforce)
@@ -74,9 +74,9 @@ Instead, it acts as a **reasoning agent** that:
 
 ---
 
-## 🧠 Reasoning Techniques Implemented
+## Reasoning Techniques Implemented
 
-### 1️⃣ Semantic Consensus
+### 1.Semantic Consensus
 - Captions are embedded using **Sentence-BERT**
 - Pairwise **cosine similarity** is computed
 - The caption with the highest average agreement is selected
@@ -86,7 +86,7 @@ among all models.
 
 ---
 
-### 2️⃣ Tree of Thoughts (ToT)
+### 2.Tree of Thoughts (ToT)
 When enabled:
 - Gemini generates multiple candidate captions
 - Each candidate is evaluated against the consensus caption
@@ -96,7 +96,7 @@ This reasoning process is **explicit, inspectable, and traceable**.
 
 ---
 
-### 3️⃣ Self-Correction
+### 3.Self-Correction
 A final verification step ensures that the selected caption:
 - Is coherent
 - Is concise
@@ -104,7 +104,7 @@ A final verification step ensures that the selected caption:
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 When ground truth captions are available, the system computes:
 
@@ -117,7 +117,7 @@ All metrics are displayed transparently in the Streamlit interface.
 
 ---
 
-## 🖥️ Streamlit Application Features
+## Streamlit Application Features
 
 - Image upload
 - Toggle Tree of Thoughts reasoning
@@ -130,7 +130,7 @@ All metrics are displayed transparently in the Streamlit interface.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 
@@ -151,7 +151,7 @@ All metrics are displayed transparently in the Streamlit interface.
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 pip install -r requirements.txt
@@ -159,7 +159,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Application
+## Run the Application
 
 ```bash
 streamlit run app.py
@@ -167,7 +167,7 @@ streamlit run app.py
 
 ---
 
-## ⭐ Key Contributions
+## Key Contributions
 
 * Multi-model caption consensus
 * Semantic similarity-based decision making
@@ -179,7 +179,7 @@ streamlit run app.py
 
 ---
 
-## 👥 Team Members
+## Team Members
 
 * **Bellouch Ayoub**
 * **Mafkoud Khaoula**
